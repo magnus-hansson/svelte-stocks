@@ -7,6 +7,6 @@ export const get: RequestHandler = async () => {
 	const data = await ideasRepo.getAll()
 
 	return {
-		body: { data }
+		body: { ideas: data }
 	}
 }
